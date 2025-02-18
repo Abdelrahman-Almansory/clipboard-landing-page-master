@@ -309,6 +309,7 @@ footer figure {
     .footer-box {
          align-items: flex-start;
         text-align: left;
+        height: 100%;
     }
 
 }
