@@ -1,0 +1,314 @@
+:root {
+    --clr-cyan: hsl(171, 66%, 44%);
+    --clr-blue: hsl(233, 100%, 69%);
+    --clr-dark-grayblue: hsl(210, 10%, 33%);
+    --clr-grayblue: hsl(201, 11%, 66%);
+    --fw-sm: 400;
+    --fw-lg: 600;
+}
+
+/* CSS RESET */
+
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    text-wrap: pretty;
+}
+
+/* Styling Mobile First */
+
+body {
+    min-height: 100dvh;
+    background-color: #fff;
+    font-family: "Bai Jamjuree", serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-image: url('images/bg-header-mobile.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 5rem 3rem;
+}
+
+header figure {
+    padding-bottom: 2rem;
+}
+
+header h1 ,.track-section-header h2, .access-section-header h2, .clipboard-section h2, .workflow-section h2{
+    color: var(--clr-dark-grayblue);
+    font-weight: var(--fw-lg);
+    font-size: 2rem;
+}
+
+header .header-title h1 {
+    font-size: 2.2rem;
+}
+
+header p , .track-section-header p, .track-section-details-box p .workflow-section p, .workflow-section-header p, .access-section-header p , .clipboard-section p{
+    color: var(--clr-grayblue);
+    font-weight: var(--fw-sm);
+    line-height: 1.7;
+}
+
+header p {
+    padding-bottom: 2rem;
+}
+
+.button-area {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.button-area .btn {
+    padding: 1rem 4rem;
+    border-radius: 2rem;
+    border: 2px solid var(--clr-cyan);
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: var(--fw-lg);
+    font-size: 1rem;
+    color: white;
+    background-color: var(--clr-cyan);
+}
+
+.button-area .secondary-btn {
+    background-color: var(--clr-blue);
+    border: 2px solid var(--clr-blue);
+}
+
+.btn, .secondary-btn {
+    transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+    background-color: white;
+    color: var(--clr-cyan);
+}
+
+.secondary-btn:hover {
+    color: var(--clr-blue);
+}
+
+section {
+    padding: 3rem;
+}
+
+.track-section {
+    padding-bottom: 8rem;
+}
+
+.track-section, .track-section-details, .access-section, .workflow-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+
+.track-section-header h2 {
+    padding-bottom: 2rem;
+}
+
+.track-section-details aside p {
+    color: var(--clr-grayblue);
+}
+
+
+
+.track-section-details-box h4 {
+    color: var(--clr-dark-grayblue);
+    font-weight: var(--fw-lg);
+    font-size: 1.4rem;
+    padding-bottom: 1rem;
+}
+
+.access-section-header h2{
+    margin-bottom: 2rem;
+}
+
+.access-section figure {
+    margin-bottom: 6rem;
+}
+
+.workflow-section-header p {
+    color: var(--clr-grayblue);
+    margin-top: 1rem;
+}
+
+.workflow-info-container {
+    display: flex; 
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.workflow-info-boxes {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.workflow-info-boxes img {
+    width: 50px;
+}
+
+.workflow-info-boxes h3 {
+    color: var(--clr-dark-grayblue);
+    font-weight: var(--fw-lg);
+    font-size: 1.5rem;
+}
+
+.workflow-info-boxes p {
+    color: var(--clr-grayblue);
+}
+
+.logos-section {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    padding: 4rem 0 4rem 0;
+}
+
+.clipboard-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.clipboard-section p {
+    margin-bottom: 2rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    background-color: rgb(247, 245, 245);
+    width: 100%;
+    padding: 3rem;
+}
+
+footer figure {
+    width: 3rem;
+}
+
+.footer-box-container, .footer-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.footer-box p{
+    cursor: pointer;
+    position: relative;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.footer-box p:hover  {
+    opacity: 0.5;
+}
+
+.social-container {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+@media(min-width:1200px) {
+    header {
+        width: 100%;
+        background-image: url('images/bg-header-desktop.png');
+        
+    }
+
+    header h1 {
+        font-size: 2.8rem;
+    }
+
+    header p {
+        font-size: 1.2rem;
+    }
+
+    .button-area {
+        flex-direction: row;
+    }
+
+    header , .track-section-header, .access-section-header, .workflow-section-header, .clipboard-section , footer{
+        padding-inline: 28rem;
+    }
+
+    .track-section-details {
+       display: grid; 
+       grid-template-columns: 1fr 1fr;
+       gap: 2rem;
+    }
+
+    .track-section-details figure {
+        transform: translateX(-5rem);
+    }
+
+    .track-section-details aside{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        width: 60%;
+        height: 100%;
+    }
+
+    .clipboard-section {
+        margin-bottom: 4rem;
+    }
+
+    .workflow-section, footer {
+        padding-inline: 10rem;
+    }
+
+    .workflow-info-container, .logos-section, footer,.footer-box-container{
+        flex-direction: row;
+    }
+
+    footer {
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .footer-box-container { 
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 5rem;
+        padding-right: 10rem;
+    }
+
+    .footer-box {
+         align-items: flex-start;
+        text-align: left;
+    }
+
+}
