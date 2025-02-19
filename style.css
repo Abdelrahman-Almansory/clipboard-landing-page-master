@@ -261,6 +261,7 @@ footer figure {
   header {
     width: 100%;
     background-image: url("images/bg-header-desktop.png");
+    padding-top: 10rem;
   }
 
   header h1 {
